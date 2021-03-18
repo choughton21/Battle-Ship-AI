@@ -3,7 +3,7 @@
 
 INTRODUCTION
 
-  In this project, I teach a computer to play battleship. Since battleship is a technical game
+  In this project, we teach a computer to play battleship. Since battleship is a technical game
 and the ideal moves change sa the game progresses, it is interesting to see how well we are 
 able to tach the AI to play. The main reason this is a challenging task is that we need advanced
 algorithms to learn how to play the game, if we want our AI to actually play well, and the learning
