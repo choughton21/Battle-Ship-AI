@@ -1,36 +1,20 @@
-## Welcome to GitHub Pages
+## Welcome to Battle Ship AI
 
-You can use the [editor on GitHub](https://github.com/choughton21/Battle-Ship-AI/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Introduction
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+In this project, we teach a computer to play battleship. Since battleship is a technical game and the ideal moves change sa the game progresses, it is interesting to see how well we are able to tach the AI to play. The main reason this is a challenging task is that we need advanced algorithms to learn how to play the game, if we want our AI to actually play well, and the learning technique needs to understand how to learn well. If an adult plays battelship against a toddler who makes moves randomly, the adult will win almost every time. Our goal is to train the computer to play less like a toddler making random moves and more like a skilled adult; this is a challenging task. The fact that deep learning is a black box is a further difficulty since we cannot help the computer learn better since we do not know how it is learning exactly, and we only see performance. We hope to find that after training, our AI is able to play battleship well beyond that of a random player.
 
-### Markdown
+In terms of an ethical extension, as battlehsip is a game that mimicks a military procedure, we talk about some of the ethical implications of AI being used for military purposes.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### LITERATURE REVIEW
 
-```markdown
-Syntax highlighted code block
+There are a few projects that have been done which talk teach AI to play board games. In the article, Measuring AI advancement through games, the authors discuss the progress of AI in terms of playing several different board games. Some of the games they look into are Chess, Pacman, Texas hold'em, Jeoparty, Atari, and Dota2. These games have all been conquered at some level, and most of them have an AI which can beat all human players. There is one game which is yet to be conquered and that game is Bridge. The article also talks to OpenAI and their platform, universe, to continue training AI for games and other projects.
 
-# Header 1
-## Header 2
-### Header 3
+Google has created an AI to play the board game, GO, and it has been able to beat some of the highest regarded GO players in the world. First it was able to beat Lee Sedol in 2016 and then in 2017 the AI beat GO grandmaster Ke Jie. In terms of AI and learning to play board games this was a huge accomplishment. The game was livestreamed on Youtube. The number of possible boards for GO is larger than the number of atoms in the universe.
 
-- Bulleted
-- List
+In addition to GO, a board game that has been studied with AI is Ticket to Ride. In thier paper, Lee, Silva, Togelius, and Nealen discuss a few playing styles are taught and then analyzed to see how effective each is. They use the playing styles to look at what pieces of the game are most valuable in terms of winning. They find that certain cities are more important in order to win the game.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/choughton21/Battle-Ship-AI/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+The research on AI and games is not all board games, and OpenAI ran a project for teams to compete to play hide and seek. the teams had to adapt to each other while they were playing. The games start crazily and frantic but finally, after many rounds, the hiders learn to lock out the seekers to win in general. The hider-teams had to learn to work together. They found some errors with the way they coded the physics, and it created some fun-to-watch results that would not be possible in a real game of hide and seek.
 
 ### Support or Contact
 
