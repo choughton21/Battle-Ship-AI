@@ -16,6 +16,14 @@ In addition to GO, a board game that has been studied with AI is Ticket to Ride.
 
 The research on AI and games is not all board games, and OpenAI ran a project for teams to compete to play hide and seek. the teams had to adapt to each other while they were playing. The games start crazily and frantic but finally, after many rounds, the hiders learn to lock out the seekers to win in general. The hider-teams had to learn to work together. They found some errors with the way they coded the physics, and it created some fun-to-watch results that would not be possible in a real game of hide and seek.
 
+### METHODS
+
+In this project there are a few steps taken before the learning can take place. To begin, I used python to write a battleship game. After this, I used an openai gym environment and stable baselines3 reinforcement learning library for the implementaiton of the learning algorithm and finally I will use pytorch to build my neural network. 
+
+The input to the network is a two-dimensional array which is coming from the python battleship program,and the output are actions (moves) which are represented as a one dimensional array. 
+
+(currently at the stage of getting the output from python to make sense with the openai gym environment)
+
 ### Support or Contact
 
 Having trouble with Pages? Check out [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
