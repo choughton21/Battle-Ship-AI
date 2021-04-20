@@ -24,6 +24,13 @@ The input to the network is a two-dimensional array which is coming from the pyt
 
 (currently at the stage of getting the output from python to make sense with the openai gym environment)
 
+### DISCUSSION
+
+From this project I will present the results from the AI playing battleship against a random opponent. I will show the initial win-rate and game time, and then will show the win-rate and game time after learning. To compare the work to others, I will reserach battleship AIs and compare on the win-rate, and also touch on the differences between my project and other board-game AIs. I will also touch on the techniques I have learned along the way and how I learned to implement the gym environment. Finally I will discuss the different tweaks and turns I did during the training, to try and have the AI learn better/ more accurately. We do hope that the AI is able to play better after learning, but if not, then we will discuss some of the potential places where this went wrong. 
+
+Following, I will talk about the pros and cons of AI being used for military robotics and how AI might shape the military in the future. 
+
+
 ### Support or Contact
 
 Having trouble with Pages? Check out [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
