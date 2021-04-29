@@ -2,7 +2,7 @@
 
 ### Introduction
 
-In this project, we teach a computer to play battleship. Since battleship is a technical game and the ideal moves change sa the game progresses, it is interesting to see how well we are able to tach the AI to play. The main reason this is a challenging task is that we need advanced algorithms to learn how to play the game, if we want our AI to actually play well, and the learning technique needs to understand how to learn well. If an adult plays battelship against a toddler who makes moves randomly, the adult will win almost every time. Our goal is to train the computer to play less like a toddler making random moves and more like a skilled adult; this is a challenging task. The fact that deep learning is a black box is a further difficulty since we cannot help the computer learn better since we do not know how it is learning exactly, and we only see performance. We hope to find that after training, our AI is able to play battleship well beyond that of a random player.
+In this project, we teach a computer to play battleship. Since battleship is a technical game and the ideal move changes as the game progresses, it is interesting to see how well we are able to tach the AI to play. The main reason this is a challenging task is that we need advanced algorithms to learn how to play the game, if we want our AI to actually play well, and the learning technique needs to understand how to learn well. If an adult plays battelship against a toddler who makes moves randomly, the adult will win almost every time. Our goal is to train the computer to play less like a toddler making random moves and more like a skilled adult; this is a challenging task. The fact that deep learning is a black box is a further difficulty since we cannot help the computer learn better since we do not know how it is learning exactly, and we only see performance. We hope to find that after training, our AI is able to play battleship well beyond that of a random player.
 
 In terms of an ethical extension, as battlehsip is a game that mimicks a military procedure, we talk about some of the ethical implications of AI being used for military purposes.
 
@@ -22,6 +22,15 @@ In this project there are a few steps taken before the learning can take place. 
 
 The input to the network is a two-dimensional array which is coming from the python battleship program,and the output are actions (moves) which are represented as a one dimensional array. 
 
+In order to have the AI able to learn, I found a framework from https://towardsdatascience.com/creating-a-custom-openai-gym-environment-for-stock-trading-be532be3910e and, as it turns out, you must use classes for the AI to be able to learn. The first step to using the framework was therefore to turn the program I had written into a class. After this, we created the _init_ function to define the action space and the observation space for the AI, and we set a reward variable. We then made the makeObs function which computes an observation for the network and decides what info the network will use to make an action. We also make step, reset, and render functions to help with execution of the game and communicate with the network.
+
+Once this was working, we ran it and saw the results after 100 games of battleship. The following are our initial results:
+
+
+In terms of rewards, we tried a few different reward structures and we saw different results. At first, we gave only positive rewards, and rewarded every time the AI hit a ship, and again when they sunk a ship. This seemed to only give mediocre results and the network, against a random player, was not doing much better than 50%.
+
+We decided to give more weight to the end of the game win, less weight to sinking a ship, and we removed the reward for each ship “hit”. 
+
 (currently at the stage of getting the output from python to make sense with the openai gym environment)
 
 ### DISCUSSION
@@ -36,9 +45,4 @@ Following, I will talk about the pros and cons of AI being used for military rob
 ### ETHICS DISCUSSION
 
 
-### REFLECTIONS 
-
-
-### Support or Contact
-
-Having trouble with Pages? Check out [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### REFLECTIONS
