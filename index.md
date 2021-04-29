@@ -43,6 +43,10 @@ Following, I will talk about the pros and cons of AI being used for military rob
 
 
 ### ETHICS DISCUSSION
+Battleship is a game in which you aim to sink your opponents’ ships by launching attacks. In this project, we looked at an AI who will learn where to launch the attacks as to best defeat the opponent. However, if this was not a game and was AI for the military the stakes are quite a bit different. For example, a “miss” might mean firing into a civilian town instead of hitting a military base. In terms of AI and use by the military this concern should be addressed; it is not easy to train the AI and consequences means lives lost. In economics we learned that the US government places each life at about US $125,000, but the US military budget is 1.92 trillion. If the military wants to run tests and only values lives at 125,000 they might be a little bit too quick to trust their AI, and I am not aware of any real ramifications in play for the military if a test goes wrong. Of course, there is a positive look that if AI can provide more accuracy than humans can in various situations, then we might actually avoid causalties and mistakes could happen much less. This would be of course a benefit, and there are many applications where technology has improved the military so far. For example, weapons, transportation, machines to carry items, robots to detect and robots that can shoot. 
+
+AI however should be treated a bit differently since it is something that “thinks” and to the extent that we do not know exactly what a network has learned, we don’t know how the network will behave. It could be that for 100 days the network looks perfect and does what it should, but on the 101th day everything happens badly. There is no way to truly know why the change happened or what caused the good days in the first place. There are positives and negatives to using AI with regards to the US military, but I do believe we should approach the subject with caution.
+
 
 
 ### REFLECTIONS
