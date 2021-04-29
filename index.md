@@ -39,7 +39,7 @@ From this project I will present the results from the AI playing battleship agai
 
 Following, I will talk about the pros and cons of AI being used for military robotics and how AI might shape the military in the future. 
 
-### RESULTS
+### GRAPHED RESULTS
 
 
 ### ETHICS DISCUSSION
