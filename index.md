@@ -37,7 +37,7 @@ We decided to give more weight to the end of the game win, less weight to sinkin
 
 What we found initially, is that the AI we created was not able to play much better than a random player. Although this is initially a disappointing result, it turned out to not be impossible to improve. We believe the poor initial results is due to the rewards allocation. In the game Battleship you only, as a human, get a reward at the end for winning. However, when you play, there is a sense of happiness that comes as you hit a ship and as you sink your opponent’s ships, and for this reason we added in rewards for those aspects as well. We saw that when we tweaked these parameters the results changed, and thus it is a question of identifying the correct ratios of rewards. 
 
-A few Battleship AI projects we found,
+Battleship is a two-player game, but typically we do not care about the actions of the other player since it is not interactive. For the purpose of rewards, we therefore gave no negative rewards when the opponent was sinking our ships. However, in turn, the network seems to be confused when the game suddenly ends and it has lost, and it seems that the network is not sure how to estimate how much time it has to sink all of the ships. There is an issue of the network trying to learn an optimal sinking strategy, but then being cut short and seemingly randomly so. We therefore tried a few cases where place a negative reward for the opponent sinking our ships. On the one hand, if our netowrk knows they are one ship away from loosing the game, there might be an all-or-nothing guessing strategy that is most beneficial here. 
 
 
 ### GRAPHED RESULTS
