@@ -35,9 +35,10 @@ We decided to give more weight to the end of the game win, less weight to sinkin
 
 ### DISCUSSION
 
-From this project I will present the results from the AI playing battleship against a random opponent. I will show the initial win-rate and game time, and then will show the win-rate and game time after learning. To compare the work to others, I will reserach battleship AIs and compare on the win-rate, and also touch on the differences between my project and other board-game AIs. I will also touch on the techniques I have learned along the way and how I learned to implement the gym environment. Finally I will discuss the different tweaks and turns I did during the training, to try and have the AI learn better/ more accurately. We do hope that the AI is able to play better after learning, but if not, then we will discuss some of the potential places where this went wrong. 
+What we found initially, is that the AI we created was not able to play much better than a random player. Although this is initially a disappointing result, it turned out to not be impossible to improve. We believe the poor initial results is due to the rewards allocation. In the game Battleship you only, as a human, get a reward at the end for winning. However, when you play, there is a sense of happiness that comes as you hit a ship and as you sink your opponent’s ships, and for this reason we added in rewards for those aspects as well. We saw that when we tweaked these parameters the results changed, and thus it is a question of identifying the correct ratios of rewards. 
 
-Following, I will talk about the pros and cons of AI being used for military robotics and how AI might shape the military in the future. 
+A few Battleship AI projects we found,
+
 
 ### GRAPHED RESULTS
 
