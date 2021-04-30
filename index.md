@@ -50,3 +50,9 @@ AI however should be treated a bit differently since it is something that “thi
 
 
 ### REFLECTIONS
+If I were to do this project again, I think I would have planned the structure differently. For example, I spent a larger chunk of time setting up the battleship game in python, but this had to be mostly re-written to fit a class when I wanted to use the OpenAI Gym environment. Next time, I will plan this better and look at what each piece of the puzzle requires so that the process can be a bit smoother.
+
+In addition, documentation within code comes naturally, but during the process I would document my steps a bit better and as I do them. I found that trying to do the write-ups days after I had completed something was a bit challenging, and it was difficult to remember what exactly I did. If instead I did the write-up as I went, I could simply make a note every time I added a function, or changed the rewards parameter, and this process of the formal write-up would go much smoother because I would have already written the outline of methods. 
+
+Finally, I chose to do my project as a single, due to the online format and a few other factors. Next time, I think I would challenge myself to work with a partner or a group, and I think this would have brought a bit of a social aspect, and it would have been nice to have someone get excited about results with me as I go. With that being said, not I nor anyone could have planned for the pandemic or how it has affected each of us. 
+
