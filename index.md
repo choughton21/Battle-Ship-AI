@@ -24,14 +24,9 @@ The input to the network is a two-dimensional array which is coming from the pyt
 
 In order to have the AI able to learn, I found a framework from https://towardsdatascience.com/creating-a-custom-openai-gym-environment-for-stock-trading-be532be3910e and, as it turns out, you must use classes for the AI to be able to learn. The first step to using the framework was therefore to turn the program I had written into a class. After this, we created the _init_ function to define the action space and the observation space for the AI, and we set a reward variable. We then made the makeObs function which computes an observation for the network and decides what info the network will use to make an action. We also make step, reset, and render functions to help with execution of the game and communicate with the network.
 
-Once this was working, we ran it and saw the results after 100 games of battleship. The following are our initial results:
-
-
-In terms of rewards, we tried a few different reward structures and we saw different results. At first, we gave only positive rewards, and rewarded every time the AI hit a ship, and again when they sunk a ship. This seemed to only give mediocre results and the network, against a random player, was not doing much better than 50%.
+In terms of rewards, we tried a few different reward structures and we saw different results. One method we tried gave only positive rewards, and rewarded every time the AI hit a ship (+1), and again when they sunk a ship (+.5) such that the max points possible is 19.5. This seemed to give positive results and the network, against a random player, increased their average reward per game is increasing as we see in the first graph under graphed results. 
 
 We decided to give more weight to the end of the game win, less weight to sinking a ship, and we removed the reward for each ship “hit”. 
-
-(currently at the stage of getting the output from python to make sense with the openai gym environment)
 
 ### DISCUSSION
 
