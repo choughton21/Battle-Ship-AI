@@ -41,6 +41,9 @@ Battleship is a two-player game, but typically we do not care about the actions 
 
 
 ### GRAPHED RESULTS
+![image](https://user-images.githubusercontent.com/78001369/116769480-4aad0e80-a9f1-11eb-886d-61ede852d484.png)
+
+
 
 
 ### ETHICS DISCUSSION
