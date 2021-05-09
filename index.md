@@ -18,10 +18,7 @@ In addition to GO, a board game that has been studied with AI is Ticket to Ride.
 The research on AI and games is not all board games, and OpenAI ran a project for teams to compete to play hide and seek. the teams had to adapt to each other while they were playing. The games start crazily and frantic but finally, after many rounds, the hiders learn to lock out the seekers to win in general. The hider-teams had to learn to work together. They found some errors with the way they coded the physics, and it created some fun-to-watch results that would not be possible in a real game of hide and seek.
 
 ### METHODS
-
-(((((((Stable baselines three)))))
-(((((Open AI gym env))))))))
-(((((((((pytorch)))))))))
+  
 In this project there are a few steps taken before the learning can take place. To begin, I used python to write a battleship game. After this, I then made this python program compatible with the openai gym environment, and used stable baselines3 reinforcement learning library for the implementaiton of the learning algorithm. The neural network was trained in pytorch.
 
 The input to the network is a two-dimensional array which is coming from the python battleship program,and the output are actions (moves) which are represented as a one dimensional array. 
@@ -40,12 +37,6 @@ Battleship is a two-player game, but typically the actions of the other player a
 
 Another way I tried to simulate the pressure of an opponent was by giving a negative reward for each turn, and I trained the network with a negative one reward every time it took a turn. The idea was that the best way to play battleship is by quickly sinking all of the ships, and if the network is punished for each move, it is therefore encouraged to finish the game sooner. After I implemented this, the average win rate was about ((((((()))))))))))))).
 
-### GRAPHED RESULTS
-![image](https://user-images.githubusercontent.com/78001369/116802205-f45dcf80-aac5-11eb-822b-eec86ef36687.png)
-graph with PPO .9 for hit ship, .1 for sink ship. Graph shows average win rate decreasing as network learns. Fail because a random player against a random player would have a win rate of 50% adn our trained network has a win rate of only 30%. Our network did not learn correctly.
-
-![image](https://user-images.githubusercontent.com/78001369/116769480-4aad0e80-a9f1-11eb-886d-61ede852d484.png)
-This shows the training is happening correctly becuase the average reward amount is going up, and since the win rate is decreasing but the reward is going up, it seems we will need to alter the way we are doing the rewards in order for the network to learn to play better. 
 
 ### DIAGRAM OF BATTLESHIP
 
@@ -56,11 +47,18 @@ Battleship is a two player game and each player has two boards, for a total of f
 
 
 ### ETHICS DISCUSSION
-Benefits
-Drawbacks
-Conclusions
 
-Battleship is a game in which you aim to sink your opponents’ ships by launching attacks. In this project, we looked at an AI who learned where to launch the attacks as to best defeat the opponent. However, if this was not a game and was AI for the military the stakes are quite a bit different. For example, a “miss” might mean firing into a civilian town instead of hitting a military base. In terms of AI and use by the military this concern should be addressed; it is not easy to train the AI and consequences means lives lost. In economics we learned that the US government places each life at about US $125,000, but the US military budget is 1.92 trillion. If the military wants to run tests and only values lives at 125,000 they might be a little bit too quick to trust their AI, and I am not aware of any real ramifications in play for the military if a test goes wrong. Of course, there is a positive look that if AI can provide more accuracy than humans can in various situations, then we might actually avoid causalties and mistakes could happen much less. This would be of course a benefit, and there are many applications where technology has improved the military so far. For example, weapons, transportation, machines to carry items, robots to detect and robots that can shoot. 
+Battleship is a game in which you aim to sink your opponents’ ships by launching attacks. In this project, we looked at an AI who learned where to launch the attacks as to best defeat the opponent. However, if this was not a game and was AI for the military the stakes are quite a bit different. 
+
+**Potential Detriments of using AI for military use:**
+
+A “miss” might mean firing into a civilian town instead of hitting a military base, and this is a high price to pay for a computer mistake. It is not easy to train the AI and consequences means lives lost. In economics we learned that the US government places each life at about US $125,000, but the US military budget is 1.92 trillion. If the military wants to run tests and only values lives at 125,000 they might be a little bit too quick to trust their AI, and I am not aware of any real ramifications in play for the military if a test goes wrong. 
+
+**Benefits of using AI for military use:**
+
+There is a positive look that if AI can provide more accuracy than humans can in various situations, then we might actually avoid casualties and mistakes could happen much less, and there are many applications where technology has improved the military so far. For example, weapons, transportation, machines to carry items, robots to detect and robots that can shoot. 
+
+**In conclusion:**
 
 AI however should be treated a bit differently since it is something that “thinks” and to the extent that we do not know exactly what a network has learned, we don’t know how the network will behave. It could be that for 100 days the network looks perfect and does what it should, but on the 101th day everything happens badly. There is no way to truly know why the change happened or what caused the good days in the first place. There are positives and negatives to using AI with regards to the US military, but I do believe we should approach the subject with caution.
 
