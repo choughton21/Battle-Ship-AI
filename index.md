@@ -41,6 +41,7 @@ Another way I tried to simulate the pressure of an opponent was by giving a nega
 ### DIAGRAM OF BATTLESHIP
 
 Battleship is a two player game and each player has two boards, for a total of four boards. The first board is the players own ships and they keep track of which are hit and which are still floating, and the second board is blank to begin and is where a player maps out all of the shots they have taken on their opponents board. The first board has four symbols, a ship, water, a sunk piece of ship, and a hit piece of water. The second board has two symbols, a hit or a miss. Below is an image that shows an example of the boards of one player before the game has begun. 
+
 ![image](https://user-images.githubusercontent.com/78001369/117581992-bf98dc00-b0b4-11eb-901a-e4a21b653d92.png)
 (Image from https://www.mydraw.com/templates-scorecards-battleships)
 
