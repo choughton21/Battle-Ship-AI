@@ -25,7 +25,7 @@ In this project there are a few steps taken before the learning can take place. 
 
 The input to the network is a two-dimensional array which is coming from the python battleship program,and the output are actions (moves) which are represented as a one dimensional array. 
 
-In order to have the AI able to learn, I found a framework from https://towardsdatascience.com/creating-a-custom-openai-gym-environment-for-stock-trading-be532be3910e and, as it turns out, you must use classes for the AI to be able to learn. The first step to using the framework was therefore to turn the program I had written into a class. After this, I made my program compatible with the gym wrapper. First, I created the _init_ function to define the action space and the observation space for the AI, and set a reward variable. I then made the makeObs function which computes an observation for the network and decides what info the network will use to make an action. I also make step, reset, and render functions to help with execution of the game and communicate with the network.
+In order to have the AI able to learn, I found a framework OpenAI (linked below) and, as it turns out, you must use classes for the AI to be able to learn. The first step to using the framework was therefore to turn the program I had written into a class. After this, I made my program compatible with the gym wrapper. First, I created the _init_ function to define the action space and the observation space for the AI, and set a reward variable. I then made the makeObs function which computes an observation for the network and decides what info the network will use to make an action. I also make step, reset, and render functions to help with execution of the game and communicate with the network.
 
 Stable baselines comes with a default neural network and the next step is training this network to play battleship. In terms of rewards, I tried a few different reward structures and saw different results. One method gave only positive rewards, and rewarded every time the AI hit a ship (+1), and again when they sunk a ship (+.1) such that the max points possible is 17.5. This seemed to give positive results and the network, against a random player, increased their average reward per game as we see in the first graph under graphed results, for this one I used the PPO algorithm. In addition to PPO I tried a DQN algorithm, and found that, 
 
@@ -71,4 +71,13 @@ If I were to do this project again, I think I would have planned the structure d
 In addition, documentation within code comes naturally, but during the process I would document my steps a bit better and as I do them. I found that trying to do the write-ups days after I had completed something was a bit challenging, and it was difficult to remember what exactly I did. If instead I did the write-up as I went, I could simply make a note every time I added a function, or changed the rewards parameter, and this process of the formal write-up would go much smoother because I would have already written the outline of methods. 
 
 Finally, I chose to do my project as a single, due to the online format and a few other factors. Next time, I think I would challenge myself to work with a partner or a group, and I think this would have brought a bit of a social aspect, and it would have been nice to have someone get excited about results with me as I go. With that being said, not I nor anyone could have planned for the pandemic or how it has affected each of us. 
+
+
+### CITATIONS
+Stable Baselines 3, uses pytorch
+https://stable-baselines3.readthedocs.io/en/master/
+"Stable Baselines3 (SB3) is a set of reliable implementations of reinforcement learning algorithms in PyTorch."
+
+Open AI Gym environment
+https://towardsdatascience.com/creating-a-custom-openai-gym-environment-for-stock-trading-be532be3910e
 
