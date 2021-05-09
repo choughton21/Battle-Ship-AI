@@ -18,6 +18,9 @@ The research on AI and games is not all board games, and OpenAI ran a project fo
 
 ### METHODS
 
+(((((((Stable baselines three)))))
+(((((Open AI gym env))))))))
+(((((((((pytorch)))))))))
 In this project there are a few steps taken before the learning can take place. To begin, I used python to write a battleship game. After this, I then made this python program compatible with the openai gym environment, and used stable baselines3 reinforcement learning library for the implementaiton of the learning algorithm. The neural network was trained in pytorch.
 
 The input to the network is a two-dimensional array which is coming from the python battleship program,and the output are actions (moves) which are represented as a one dimensional array. 
