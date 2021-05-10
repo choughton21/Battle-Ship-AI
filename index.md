@@ -29,7 +29,7 @@ Stable baselines comes with a default neural network and the next step is traini
 
 ### DISCUSSION
 
-What was found initially, is that the AI we trained was not able to play much better than a random player, and when I looked at the graphed results of win rate, the win rate for the network was not higher than 50% against a random opponent. The graph below shows the win rate against a random opponent and you can see that the win percentage hovers around 50% but never improves higher, and this can be interpreted as the AI plays about equally as well as a random opponent.
+What was found initially, is that the AI we trained was not able to play much better than a random player, and when I looked at the graphed results of win rate, the win rate for the network was not higher than 50% against a random opponent. The graph below shows the win rate against a random opponent and you can see that the win percentage hovers around 50% but never improves higher, and this can be interpreted as the AI plays almost as well as a random opponent.
 
 ![image](https://user-images.githubusercontent.com/78001369/117603940-116b5180-b109-11eb-9c03-7951e0fa39bc.png)
 
