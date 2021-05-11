@@ -41,7 +41,10 @@ Although this is initially a disappointing result, it turned out to not be impos
 
 
 
-Battleship is a two-player game, but typically the actions of the other player are irrelevant to our strategy since it is not interactive. For the purpose of rewards, I therefore gave no negative rewards when the opponent was sinking our ships. However, in turn, the network seems to be confused when the game suddenly ended, and it seems that the network is not sure how to estimate how much time it has to sink all of the ships. There is an issue of the network trying to learn an optimal sinking strategy, but then being cut short and seemingly randomly so. I therefore tried a few cases where place a negative reward for the opponent sinking our ships, and for every ship the opponent hit we gave a reward of -.5 ((((((((()))))). My hypothesis was that if the netowrk knows they are one ship away from loosing the game, there might be an all-or-nothing guessing strategy that is most beneficial here. Once I tried this strategy of rewards, the trained network had a win rate that was about (((((((())))).
+Battleship is a two-player game, but typically the actions of the other player are irrelevant to our strategy since it is not interactive. For the purpose of rewards, I therefore gave no negative rewards when the opponent was sinking our ships. However, in turn, the network seems to be confused when the game suddenly ended, and it seems that the network is not sure how to estimate how much time it has to sink all of the ships. There is an issue of the network trying to learn an optimal sinking strategy, but then being cut short and seemingly randomly so. I therefore tried a few cases where place a negative reward for the opponent sinking our ships, and for every ship the opponent hit we gave a reward of -.5. My hypothesis was that if the netowrk knows they are one ship away from loosing the game, there might be an all-or-nothing guessing strategy that is most beneficial here. Once I tried this strategy of rewards, the trained network had a win rate that was just higher than 50%, and the graph below shows the netowrk's performance.
+
+![image](https://user-images.githubusercontent.com/78001369/117741212-bb54e780-b1b6-11eb-8a06-af32960005a9.png)
+
 
 
 ### DIAGRAM OF BATTLESHIP
