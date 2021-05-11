@@ -1,6 +1,10 @@
 ## Welcome to Battleship AI
 
-### Introduction
+### ABSTRACT
+
+This project trains a neural network to play Battleship, the board game, by using an Open AI gym environment for training. All training was done against a random agent and progress is reported as average win percentage. The algorithm primarily used for training is PPO. Ater trying training with verious lengths and various rewards parameters, the best training parameters found are a 13M step training length, a reward for hitting a ship, sinking a ship, winning the game, and a negative reward for trying to hit a spot that has already been shot at. With these parameters for rewards, the network is able to play at about a 70% win rate against a random oponent. Given that the random opponent will sometimes get lucky and play particularly well, a 70% win rate is quite good, and suggests the network has learned to play the game with some level of skill.
+
+### INTRODUCTION
 
 In this project, I teach a computer to play battleship. Since battleship is a technical game and the ideal move changes as the game progresses, it is interesting to see how well we are able to tach the AI to play. The main reason this is a challenging task is that we need advanced algorithms to learn how to play the game, if I want the AI to actually play well, and the learning technique needs to understand how to learn well. If an adult plays battleship against a toddler who makes moves randomly, the adult will win almost every time. My goal is to train the computer to play less like a toddler making random moves and more like a skilled adult; this is a challenging task. The fact that deep learning is a black box is a further difficulty since I cannot help the computer learn better since no one knows how it is learning exactly, and we only see performance. I hope to find that after training, the AI is able to play battleship well beyond that of a random player.
 
